@@ -100,7 +100,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/hello-golang
+          images: ${{ secrets.DOCKER_USERNAME }}/go1fl-final-docker-tpl
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
